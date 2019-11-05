@@ -10,3 +10,7 @@ _v_recycle_bin/
 *.gz
 _minted-main/
 *.out
+
+*.bbl
+*.blg
+

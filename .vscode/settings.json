@@ -57,7 +57,7 @@
             "args": [
                 "-synctex=1",
                 "-interaction=nonstopmode",
-                //"-file-line-error",
+                "-file-line-error",
                 "-shell-escape",
                 //"-pdf",
                 "%DOCFILE%",
@@ -94,8 +94,8 @@
             "name": "xe->bib->xe->xe",
             "tools": [
                 "xelatex",
-                //"bibtex",
-               // "xelatex",
+                "bibtex",
+                "xelatex",
                 "xelatex"
             ]
         }
