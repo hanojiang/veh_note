@@ -1,0 +1,12 @@
+*.toc
+*.pdf
+*.vswp
+_vnote.json
+*.stackdump
+_v_recycle_bin/
+*.exe
+*.log
+*.aux
+*.gz
+_minted-main/
+*.out
