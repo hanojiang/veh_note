@@ -1,0 +1,26 @@
+\section{RCC 寄存器}
+
+\subsection{RCC\_CR 时钟控制寄存器}
+
+\begin{enumerate}
+  \item bit0: HSION 置1打开内部高速时钟
+  \item bit16: HSEON 外部时钟使能
+  \item bit17： HSERDY HSE就绪标志位
+  \item bit18： HSEBYP HSE时钟旁路
+  \item bit19： CSSON 时钟安全系统使能
+  \item bit24: PLLON 主PLL使能
+  \item bit25: PLLRDY 主PLL就绪
+\end{enumerate}
+
+所以禁止外部时钟，对bit 16,19,24清零，
+\begin{minted}{c}
+  RCC->CR&=0xFEF6FFFF;
+\end{minted}
+
+
+\subsection{RCC\_CFGR 时钟配置寄存器}
+
+\subsection{RCC\_PLLCFGR PLL配置寄存器}
+默认复位值：0x2400 3010
+
+\subsection{RCC\_CIR 时钟中断寄存器}
